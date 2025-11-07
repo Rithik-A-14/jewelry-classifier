@@ -1,0 +1,9 @@
+# Use the common base image
+# You need to build the base image first and tag it as 'jewelry-classifier-base'
+FROM jewelry-classifier-base:latest
+
+# Expose the API port
+EXPOSE 8000
+
+# Command to run the FastAPI application using Uvicorn
+CMD ["uvicorn", "api:app", "--host", "0.0.0.0", "--port", "8000"]

@@ -1,0 +1,9 @@
+# Use the common base image
+# You need to build the base image first and tag it as 'jewelry-classifier-base'
+FROM jewelry-classifier-base:latest
+
+# Expose the Gradio port
+EXPOSE 7860
+
+# Command to run the Gradio application
+CMD ["python", "app.py", "--host", "0.0.0.0", "--port", "7860"]

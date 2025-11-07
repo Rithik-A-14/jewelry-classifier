@@ -1,0 +1,17 @@
+# Hugging Face Transformers
+transformers==4.56.0
+
+# Pillow
+Pillow==11.3.0
+
+# Gradio for UI
+gradio==5.44.1
+
+# FastAPI for API
+fastapi>=0.100.0
+
+# Uvicorn ASGI server for FastAPI
+uvicorn[standard]>=0.22.0
+
+# For handling file uploads in FastAPI
+python-multipart>=0.0.6
